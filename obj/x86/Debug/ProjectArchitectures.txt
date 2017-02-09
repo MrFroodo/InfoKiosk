@@ -1,1 +1,1 @@
-c:\users\jaan-johannes.valjar\documents\visual studio 2015\Projects\InfoKioskVIKK\InfoKioskVIKK\InfoKioskVIKK.csproj;x86
+C:\Users\jaan-johannes.valjar\Documents\Visual Studio 2015\Projects\InfoKioskVIKK\InfoKioskVIKK\InfoKioskVIKK.csproj;x86

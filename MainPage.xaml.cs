@@ -25,19 +25,36 @@ namespace InfoKioskVIKK
         public MainPage()
         {
             this.InitializeComponent();
-        }
-
-        private void ham(object sender, RoutedEventArgs e)
-        {
-
+            contentFrame.Navigate(typeof(Avaleht));
+            
         }
 
         private void hamburgerButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
 
         private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (AvalehtBoxItem.IsSelected)
+            {
+                contentFrame.Navigate(typeof(Avaleht));
+            }
+            else if (UudisedBoxItem.IsSelected)
+            {
+                contentFrame.Navigate(typeof(Uudised));
+            }
+            else if (KontaktidBoxItem.IsSelected)
+            {
+                contentFrame.Navigate(typeof(Kontakt));
+            }
+            else if (TunniplaanBoxItem.IsSelected)
+            {
+                contentFrame.Navigate(typeof(Tunniplaan));
+            }
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
